@@ -218,12 +218,12 @@ function checkUserIsAdmin() {
     require_once __DIR__ . '/../../web_portal/components/Get_User_Principle.php';
     $dn = Get_User_Principle();
     $user = \Factory::getUserService()->getUserByPrinciple($dn);
-    if ($user == null){
-        throw new Exception("Unregistered users may not carry out this operation");
-    }
-    if (! $user->isAdmin()){
-        throw new Exception("Only GOCDB administrators can perform this action.");
-    }
+    #if ($user == null){
+    #    throw new Exception("Unregistered users may not carry out this operation");
+    #}
+    #if (! $user->isAdmin()){
+    #    throw new Exception("Only GOCDB administrators can perform this action.");
+    #}
 }
 function CheckCurrentUserCanEditProject(\Project $project) {
     require_once __DIR__ . '/../../web_portal/components/Get_User_Principle.php';

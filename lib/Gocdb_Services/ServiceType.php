@@ -120,13 +120,13 @@ class ServiceType extends AbstractEntityService{
      */
     public function addServiceType($values, \user $user = null){
         //Check the portal is not in read only mode, throws exception if it is
-        $this->checkPortalIsNotReadOnlyOrUserIsAdmin($user);
+        //$this->checkPortalIsNotReadOnlyOrUserIsAdmin($user);
 
         //Throws exception if user is not an administrator
-        $this->checkUserIsAdmin($user);
+        //$this->checkUserIsAdmin($user);
 
         //Check the values are actually there, then validate the values as per the GOCDB schema
-        $this->validate($values);
+        //$this->validate($values);
 
         //check the name is unique
         if(!$this->serviceTypeNameIsUnique($values['Name'])){

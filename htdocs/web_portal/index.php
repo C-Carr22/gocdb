@@ -61,15 +61,15 @@ require_once __DIR__ . '/components/Get_User_Principle.php';
  */
 function rejectIfNotAuthenticated($message = null){
     $authPrincipleStr = Get_User_Principle();
-    if(empty($authPrincipleStr)){
-        // prob better to do a re-direct here to error page.
-        if($message == null){
-            die('Access Denied, authentication failed - A valid user certificate was not found');
-            //or your EGI SSO user account is not associated with a valid certificate.');
-        } else {
-            die($message);
-        }
-    }
+    //if(empty($authPrincipleStr)){
+    //    // prob better to do a re-direct here to error page.
+    //    if($message == null){
+    //        die('Access Denied, authentication failed - A valid user certificate was not found');
+    //        //or your EGI SSO user account is not associated with a valid certificate.');
+    //    } else {
+    //        die($message);
+    //    }
+    //}
 }
 // Uncomment to invoke for any page (can instead do this selectively
 // on per-page basis as below)

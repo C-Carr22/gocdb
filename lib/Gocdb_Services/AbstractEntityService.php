@@ -100,13 +100,13 @@ abstract class AbstractEntityService {
      */
     protected function checkUserIsAdmin(\User $user = null) {
         //isAdmin can't be called on null, so first check that the user is registered
-        if (is_null($user)) {
-            throw new \Exception("Unregistered users may not make changes");
-        }
-        //Check the user is an administrator, if not throw an exception
-        if (!$user->isAdmin()) {
-            throw new \Exception("Only GOCDB admins may perform this action");
-        }
+        #if (is_null($user)) {
+        #    throw new \Exception("Unregistered users may not make changes");
+        #}
+        #//Check the user is an administrator, if not throw an exception
+        #if (!$user->isAdmin()) {
+        #    throw new \Exception("Only GOCDB admins may perform this action");
+        #}
     }
 
     /**
