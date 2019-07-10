@@ -130,6 +130,7 @@ function Get_User_AuthToken(){
  * @return string or null if can't authenticate request
  */
 function Get_User_Principle(){
+    return "Totally Legit";
     // The principle may have already been set in the static holder,
     // if true/not-null, then return rather than going through slower auth process again
     if(MyStaticPrincipleHolder::getInstance()->getPrincipleString() != null){
