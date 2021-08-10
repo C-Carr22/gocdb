@@ -1,4 +1,3 @@
-<!--Temp comment to try and resolve git issue, will remove immediately in next commit-->
 <div class="rightPageContainer">
     <h1 class="Success">Success</h1><br />
     The new <?php xecho($params['apiAuthenticationEntity']->getType()) ?> credential with identifier <?php xecho($params['apiAuthenticationEntity']->getIdentifier()) ?> was successfully added.
